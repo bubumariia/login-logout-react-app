@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
 import { v4 as uuidv4 } from "uuid";
-import { setSelectionRange } from "@testing-library/user-event/dist/utils";
 
 export default class App extends Component {
   constructor() {
@@ -35,7 +34,7 @@ export default class App extends Component {
       this.setState({ fiedsEmpty: true });
       setTimeout(() => {
         this.setState({ fiedsEmpty: false });
-      }, 1000);
+      }, 2000);
     }
   };
 
@@ -58,7 +57,6 @@ export default class App extends Component {
     sessionStorage.clear();
   };
   render() {
-    console.log(this.props.logout);
     const { loggedIn, fiedsEmpty, userName, errorMessage } = this.state;
     return (
       <div className="App">

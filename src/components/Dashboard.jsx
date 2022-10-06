@@ -10,9 +10,6 @@ export default class Dashboard extends Component {
       logout: true,
     };
   }
-  handleClick = () => {
-    this.setState({ logout: true });
-  };
 
   render() {
     return (
