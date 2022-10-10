@@ -6,9 +6,7 @@ import Login from "./Login";
 export default class Dashboard extends Component {
   constructor() {
     super();
-    this.state = {
-      logout: true,
-    };
+    this.state = {};
   }
 
   render() {
